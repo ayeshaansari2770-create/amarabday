@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Amara 🎂💗</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at top left, #ffe1ef 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #e9ddff 0%, transparent 35%),
+        linear-gradient(135deg, #fff5fa, #f5efff);
+    color: #4b3a4f;
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    opacity: 0.7;
+    animation: floatHeart linear forwards;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   SCREEN SYSTEM
+========================= */
+
+.screen {
+    display: none;
+    min-height: 100vh;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.screen.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: screenIn 0.7s ease;
+}
+
+@keyframes screenIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    width: min(900px, 95%);
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 35px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 20px 70px rgba(122, 78, 120, 0.15);
+}
+
+h1,
+h2,
+h3 {
+    color: #6e456d;
+}
+
+h1 {
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    margin: 10px 0 15px;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #806d82;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    padding: 14px 25px;
+    margin: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(135deg, #e78bb6, #a982d9);
+    box-shadow: 0 8px 20px rgba(160, 103, 160, 0.2);
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(160, 103, 160, 0.3);
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-btn {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 100;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.9);
+    font-size: 1.4rem;
+    box-shadow: 0 8px 25px rgba(100,60,100,0.15);
+}
+
+/* =========================
+   OPENING
+========================= */
+
+.big-cake {
+    font-size: clamp(5rem, 15vw, 9rem);
+    animation: cakeBounce 2s ease-in-out infinite;
+}
+
+@keyframes cakeBounce {
+    0%,100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(2deg);
+    }
+}
+
+.script {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* =========================
+   FUN ZONE
+========================= */
+
+.fun-box {
+    background: rgba(255,255,255,0.72);
+    padding: 24px;
+    border-radius: 25px;
+    margin: 20px 0;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.8);
+}
+
+.fun-icon {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.gift-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.gift {
+    font-size: 3rem !important;
+    padding: 25px 10px !important;
+}
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+    text-align: left;
+    background: linear-gradient(135deg, #fff8fc, #f8f1ff);
+    padding: 35px;
+    border-radius: 25px;
+    margin-top: 25px;
+    line-height: 2;
+}
+
+.letter p {
+    margin-bottom: 18px;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-align: right;
+    color: #a05d91;
+}
+
+/* =========================
+   APPRECIATION
+========================= */
+
+.appreciation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.appreciation {
+    background: rgba(255,255,255,0.8);
+    border-radius: 22px;
+    padding: 25px;
+    transition: 0.25s;
+}
+
+.appreciation:hover {
+    transform: translateY(-5px);
+}
+
+.appreciation .emoji {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CAKE
+========================= */
+
+.cake-area {
+    margin: 35px auto;
+    width: 300px;
+    position: relative;
+}
+
+.cake {
+    position: relative;
+    width: 260px;
+    height: 150px;
+    margin: auto;
+}
+
+.cake-top {
+    position: absolute;
+    top: 20px;
+    width: 260px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffb6d5;
+    border: 5px solid #f48eb9;
+}
+
+.cake-body {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    width: 240px;
+    height: 100px;
+    background: linear-gradient(#ffc9df, #f59fc5);
+    border-radius: 0 0 25px 25px;
+}
+
+.candle {
+    position: absolute;
+    width: 12px;
+    height: 50px;
+    background: #b98de2;
+    top: -28px;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.candle:nth-child(1) {
+    left: 65px;
+}
+
+.candle:nth-child(2) {
+    left: 124px;
+}
+
+.candle:nth-child(3) {
+    left: 183px;
+}
+
+.flame {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    font-size: 22px;
+    animation: flame 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes flame {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.cut-line {
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    width: 5px;
+    height: 100px;
+    background: #a56886;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 10;
+}
+
+.cake-cut {
+    animation: cakeCut 0.7s ease forwards;
+}
+
+@keyframes cakeCut {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-3deg) scale(0.97);
+    }
+}
+
+/* =========================
+   BALLOONS
+========================= */
+
+.balloon-area {
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #fff8fc, #f1eaff);
+    margin: 25px 0;
+}
+
+.balloon {
+    position: absolute;
+    width: 65px;
+    height: 80px;
+    border-radius: 50% 50% 45% 45%;
+    cursor: pointer;
+    animation: balloonFloat 4s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    bottom: -38px;
+    width: 1px;
+    height: 40px;
+    background: #765;
+}
+
+@keyframes balloonFloat {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.balloon.popped {
+    animation: pop 0.35s ease forwards;
+    pointer-events: none;
+}
+
+@keyframes pop {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz-question {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 25px 0 15px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quiz-options button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #f3e5f5;
+    color: #67466b;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.quiz-options button:hover {
+    background: #e8d1eb;
+    transform: translateY(-2px);
+}
+
+.quiz-result {
+    min-height: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final-message {
+    font-size: 1.1rem;
+    line-height: 2;
+    max-width: 700px;
+    margin: auto;
+}
+
+.final-heart {
+    font-size: 5rem;
+    animation: heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.12);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.12);
+    }
+}
+
+/* =========================
+   SPARKLES
+========================= */
+
+.sparkle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 200;
+    font-size: 25px;
+    animation: sparkleAnim 1s ease forwards;
+}
+
+@keyframes sparkleAnim {
+    from {
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.5) rotate(180deg) translateY(-80px);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    width: 10px;
+    height: 16px;
+    z-index: 300;
+    pointer-events: none;
+    animation: confettiFall 3s linear forwards;
+}
+
+@keyframes confettiFall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .card {
+        padding: 28px 18px;
+        border-radius: 25px;
+    }
+
+    .screen {
+        padding: 30px 12px;
+    }
+
+    .appreciation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gift-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .gift {
+        font-size: 2.2rem !important;
+        padding: 20px 5px !important;
+    }
+
+    .letter {
+        padding: 22px;
+    }
+
+    .cake-area {
+        transform: scale(0.85);
+    }
+
+    .balloon-area {
+        min-height: 430px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     MUSIC BUTTON
+========================= -->
+
+<button class="music-btn" onclick="toggleMusic()" id="musicButton">
+    🎵
+</button>
+
+<!-- FLOATING HEARTS -->
+<div class="hearts" id="hearts"></div>
+
+
+<!-- =========================================================
+     SCREEN 1 — OPENING
+========================================================= -->
+
+<section class="screen active" id="screen1">
+
+    <div class="card">
+
+        <div class="big-cake">🎂</div>
+
+        <p class="script" style="font-size:2rem;color:#a15c91;">
+            A very special day...
+        </p>
+
+        <h1>
+            Happy Birthday<br>
+            <span style="color:#d66fa2;">Amara</span> 💗
+        </h1>
+
+        <p class="subtitle">
+            Today isn't just another birthday...
+            it's a celebration of YOU. 🥹✨
+        </p>
+
+        <br>
+
+        <p>
+            So before we begin...
+            take a deep breath, smile and get ready. 😂💗
+        </p>
+
+        <br>
+
+        <button class="btn" onclick="goTo(2)">
+            🎁 Open Your Surprise
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 2 — BESTIE FUN ZONE
+========================================================= -->
+
+<section class="screen" id="screen2">
+
+    <div class="card">
+
+        <div style="font-size:3.5rem;">
+            🎪✨💗✨🎪
+        </div>
+
+        <h1 style="font-size:3rem;">
+            Bestie Fun Zone
+        </h1>
+
+        <p>
+            Okay birthday girl...
+            enough emotional stuff for a minute. 😂
+        </p>
+
+        <p>
+            Now let's have some FUN! 🥳
+        </p>
+
+
+        <!-- RANDOM COMPLIMENT -->
+
+        <div class="fun-box">
+
+            <div class="fun-icon">💌</div>
+
+            <h3>
+                Your Random Bestie Compliment
+            </h3>
+
+            <p id="compliment">
+                Click the button...
+                I have something to tell you 👀
+            </p>
+
+            <button class="btn" onclick="randomCompliment()">
+                💗 Tell Me Something Nice
+            </button>
+
+        </div>
+
+
+        <!-- MYSTERY GIFTS -->
+
+        <div class="fun-box">
+
+            <div class="fun-icon">🎁</div>
+
+            <h3>
+                Pick Your Mystery Gift
+            </h3>
+
+            <p>
+                Don't overthink it...
+                choose one! 😂
+            </p>
+
+            <div class="gift-grid">
+
+                <button
+                    class="btn gift"
+                    onclick="mysteryGift(1)">
+                    🎁
+                </button>
+
+                <button
+                    class="btn gift"
+                    onclick="mysteryGift(2)">
+                    🎁
+                </button>
+
+                <button
+                    class="btn gift"
+                    onclick="mysteryGift(3)">
+                    🎁
+                </button>
+
+            </div>
+
+            <p id="giftResult"></p>
+
+        </div>
+
+
+        <!-- FUTURE -->
+
+        <div class="fun-box">
+
+            <div class="fun-icon">🔮</div>
+
+            <h3>
+                Amara's Totally Scientific Future 🔮
+            </h3>
+
+            <p id="fortune">
+                Your future is waiting...
+            </p>
+
+            <button class="btn" onclick="generateFortune()">
+                🔮 Reveal My Future
+            </button>
+
+        </div>
+
+
+        <br>
+
+        <button class="btn" onclick="goTo(3)">
+            Okay, I'm Ready For More! 😂 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 3 — HEARTFELT LETTER
+========================================================= -->
+
+<section class="screen" id="screen3">
+
+    <div class="card">
+
+        <div style="font-size:3.5rem;">
+            💌🌷
+        </div>
+
+        <h2>
+            A Little Something From My Heart
+        </h2>
+
+        <div class="letter">
+
+            <p>
+                Dear Amara, 💗
+            </p>
+
+            <p>
+                I don't think people always realize how much
+                they mean to us until we actually stop and say it.
+            </p>
+
+            <p>
+                So today, on your birthday, I just want you to know
+                that I am genuinely grateful for you.
+            </p>
+
+            <p>
+                Thank you for all the laughs, random conversations,
+                silly moments, little memories and all those times
+                when you somehow managed to make an ordinary day
+                feel special. 🥹
+            </p>
+
+            <p>
+                Life becomes so much more fun when you have someone
+                with whom you can be completely yourself.
+            </p>
+
+            <p>
+                I hope this new year of your life brings you
+                beautiful opportunities, peaceful days,
+                unforgettable memories and everything your heart
+                has been quietly wishing for. ✨
+            </p>
+
+            <p>
+                Never forget how special you are.
+                Keep smiling, keep dreaming and keep being the
+                wonderful person you are.
+            </p>
+
+            <p>
+                And yes...
+                you're getting older. 😂
+                But don't worry — you're aging beautifully.
+            </p>
+
+            <p>
+                Happy Birthday once again, Amara. 🎂💗
+            </p>
+
+            <div class="signature">
+                With lots of love,<br>
+                Your Bestie 💕
+            </div>
+
+        </div>
+
+        <br>
+
+        <button class="btn" onclick="goTo(4)">
+            There's More... 💗 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 4 — APPRECIATION
+========================================================= -->
+
+<section class="screen" id="screen4">
+
+    <div class="card">
+
+        <div style="font-size:3.5rem;">
+            💗🌸✨
+        </div>
+
+        <h2>
+            Things I Appreciate About You
+        </h2>
+
+        <p>
+            Because apparently one birthday message wasn't enough. 😂
+        </p>
+
+        <div class="appreciation-grid">
+
+            <div class="appreciation">
+                <div class="emoji">😂</div>
+                <h3>Your Humor</h3>
+                <p>
+                    You somehow make even the most random situations
+                    funny.
+                </p>
+            </div>
+
+            <div class="appreciation">
+                <div class="emoji">🫶🏻</div>
+                <h3>Your Heart</h3>
+                <p>
+                    You care deeply about the people who matter to you.
+                </p>
+            </div>
+
+            <div class="appreciation">
+                <div class="emoji">🌷</div>
+                <h3>Your Kindness</h3>
+                <p>
+                    Your little acts of kindness mean more than you know.
+                </p>
+            </div>
+
+            <div class="appreciation">
+                <div class="emoji">✨</div>
+                <h3>Your Energy</h3>
+                <p>
+                    You bring your own special kind of energy wherever
+                    you go.
+                </p>
+            </div>
+
+            <div class="appreciation">
+                <div class="emoji">🦋</div>
+                <h3>Your Growth</h3>
+                <p>
+                    Watching you grow into the person you're becoming
+                    is beautiful.
+                </p>
+            </div>
+
+            <div class="appreciation">
+                <div class="emoji">👑</div>
+                <h3>Simply You</h3>
+                <p>
+                    At the end of the day, you're special simply because
+                    you're you.
+                </p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <button class="btn" onclick="goTo(5)">
+            Okay... Time For Cake! 🎂 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 5 — CAKE CUTTING
+========================================================= -->
+
+<section class="screen" id="screen5">
+
+    <div class="card">
+
+        <div style="font-size:3.5rem;">
+            🎂🎉
+        </div>
+
+        <h2>
+            Birthday Cake Time!
+        </h2>
+
+        <p>
+            Make a wish first... 🌟
+        </p>
+
+        <div class="cake-area">
+
+            <div class="cake" id="cake">
+
+                <div class="cake-top"></div>
+
+                <div class="cake-body">
+
+                    <div class="candle" style="top:-45px;">
+                        <span class="flame">🔥</span>
+                    </div>
+
+                    <div class="candle" style="top:-45px;">
+                        <span class="flame">🔥</span>
+                    </div>
+
+                    <div class="candle" style="top:-45px;">
+                        <span class="flame">🔥</span>
+                    </div>
+
+                </div>
+
+                <div class="cut-line" id="cutLine"></div>
+
+            </div>
+
+        </div>
+
+        <p id="cakeMessage">
+            The cake is waiting... 👀
+        </p>
+
+        <button class="btn" onclick="cutCake()">
+            🔪 Cut The Cake!
+        </button>
+
+        <br>
+
+        <button class="btn" onclick="goTo(6)">
+            Next Challenge 🎈 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 6 — BALLOON GAME
+========================================================= -->
+
+<section class="screen" id="screen6">
+
+    <div class="card">
+
+        <div style="font-size:3.5rem;">
+            🎈🎈🎈
+        </div>
+
+        <h2>
+            Pop The Birthday Balloons!
+        </h2>
+
+        <p>
+            Pop all <strong>10 balloons</strong>! 🎯
+        </p>
+
+        <p>
+            Balloons popped:
+            <strong>
+                <span id="balloonScore">0</span>/10
+            </strong>
+        </p>
+
+        <div class="balloon-area" id="balloonArea"></div>
+
+        <p id="balloonMessage">
+            Let's see how fast you can do it! 😂
+        </p>
+
+        <button
+            class="btn"
+            onclick="startBalloons()">
+            🎈 Start Balloon Game
+        </button>
+
+        <br>
+
+        <button
+            class="btn"
+            onclick="goTo(7)">
+            I Finished! 🧠 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 7 — BESTIE QUIZ
+========================================================= -->
+
+<section class="screen" id="screen7">
+
+    <div class="card">
+
+        <div style="font-size:3.5rem;">
+            🧠💗
+        </div>
+
+        <h2>
+            How Well Do You Know Yourself? 😂
+        </h2>
+
+        <p>
+            Let's test your birthday-girl knowledge!
+        </p>
+
+        <div class="quiz-question">
+            1. What does Amara deserve most this year?
+        </div>
+
+        <div class="quiz-options">
+
+            <button onclick="quizAnswer(1)">
+                💰 Money
+            </button>
+
+            <button onclick="quizAnswer(1)">
+                🌷 Happiness
+            </button>
+
+            <button onclick="quizAnswer(1)">
+                ✈️ Adventures
+            </button>
+
+            <button onclick="quizAnswer(1)">
+                😂 All of the above
+            </button>
+
+        </div>
+
+
+        <div class="quiz-question">
+            2. What is the most important birthday ingredient?
+        </div>
+
+        <div class="quiz-options">
+
+            <button onclick="quizAnswer(2)">
+                🎂 Cake
+            </button>
+
+            <button onclick="quizAnswer(2)">
+                💗 Love
+            </button>
+
+            <button onclick="quizAnswer(2)">
+                🎁 Gifts
+            </button>
+
+            <button onclick="quizAnswer(2)">
+                ✨ All of them
+            </button>
+
+        </div>
+
+
+        <div class="quiz-question">
+            3. What should Amara do this year?
+        </div>
+
+        <div class="quiz-options">
+
+            <button onclick="quizAnswer(3)">
+                🌎 Explore
+            </button>
+
+            <button onclick="quizAnswer(3)">
+                💭 Dream bigger
+            </button>
+
+            <button onclick="quizAnswer(3)">
+                👑 Believe in herself
+            </button>
+
+            <button onclick="quizAnswer(3)">
+                💗 Everything
+            </button>
+
+        </div>
+
+
+        <div
+            class="quiz-result"
+            id="quizResult">
+        </div>
+
+
+        <br>
+
+        <button
+            class="btn"
+            onclick="goTo(8)">
+            See Your Final Surprise 🎊 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 8 — FINAL
+========================================================= -->
+
+<section class="screen" id="screen8">
+
+    <div class="card">
+
+        <div class="final-heart">
+            💗
+        </div>
+
+        <h1>
+            Happy Birthday,
+            Amara! 🎂
+        </h1>
+
+        <div class="final-message">
+
+            <p>
+                If you've reached this page,
+                congratulations...
+                you've officially survived your birthday website. 😂
+            </p>
+
+            <br>
+
+            <p>
+                But seriously, I hope this little surprise
+                reminded you of just how loved, appreciated
+                and special you are.
+            </p>
+
+            <br>
+
+            <p>
+                May this year bring you more laughter,
+                more adventures, more beautiful memories,
+                more reasons to smile and absolutely
+                no unnecessary drama. 😂🌷
+            </p>
+
+            <br>
+
+            <p>
+                Keep chasing your dreams.
+                Keep protecting your peace.
+                Keep smiling.
+                And never forget how amazing you are. ✨
+            </p>
+
+            <br>
+
+            <p style="font-size:1.3rem;font-weight:600;">
+                Here's to another beautiful chapter of your life. 🥂💗
+            </p>
+
+            <br>
+
+            <p style="font-size:1.5rem;">
+                Happy Birthday, Bestie! 🥹🎂🎉💗
+            </p>
+
+        </div>
+
+        <br>
+
+        <button class="btn" onclick="celebrate()">
+            🎊 Celebrate Again!
+        </button>
+
+        <button class="btn" onclick="goTo(1)">
+            🔄 Start Again
+        </button>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+function goTo(number) {
+
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.remove('active');
+    });
+
+    const nextScreen = document.getElementById('screen' + number);
+
+    if (nextScreen) {
+        nextScreen.classList.add('active');
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    createSparkles();
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+function createHeart() {
+
+    const heart = document.createElement('div');
+
+    heart.className = 'heart';
+
+    const hearts = [
+        '💗',
+        '💕',
+        '💖',
+        '💞',
+        '🌸',
+        '✨',
+        '🦋'
+    ];
+
+    heart.innerText =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+    heart.style.left =
+        Math.random() * 100 + '%';
+
+    heart.style.fontSize =
+        (15 + Math.random() * 25) + 'px';
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 7) + 's';
+
+    document.getElementById('hearts')
+        .appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 13000);
+}
+
+setInterval(createHeart, 700);
+
+
+/* =========================================================
+   RANDOM COMPLIMENT
+========================================================= */
+
+function randomCompliment() {
+
+    const compliments = [
+
+        "You are genuinely one of those people who make life feel a little warmer. 🥹💗",
+
+        "Your smile deserves its own warning label because it is dangerously cute. 😂🌷",
+
+        "You are prettier than your camera roll thinks you are. 📸👑",
+
+        "You have main-character energy and honestly... nobody can argue. ✨",
+
+        "The world is better with you in it. Period. 🫶🏻",
+
+        "You are someone's favourite person... and probably their biggest headache too. 😂💗",
+
+        "Your friendship is one of those little gifts life gives unexpectedly. 🎁💕",
+
+        "You deserve flowers, cake, peace, money and absolutely zero unnecessary drama. 🌸🎂💰",
+
+        "10/10 human. Slightly annoying. Would still recommend. 😂❤️",
+
+        "You are rare. Protect that heart of yours. 🦋🤍"
+
+    ];
+
+    const random =
+        compliments[
+            Math.floor(Math.random() * compliments.length)
+        ];
+
+    document.getElementById('compliment')
+        .innerText = random;
+
+    createSparkles();
+}
+
+
+/* =========================================================
+   MYSTERY GIFTS
+========================================================= */
+
+function mysteryGift(number) {
+
+    const gifts = {
+
+        1:
+        "🎟️ CONGRATULATIONS! You won unlimited bestie hugs! 🫂💗",
+
+        2:
+        "🍰 YOU WON! One imaginary birthday cake with ZERO calories! 😂🎂",
+
+        3:
+        "👑 JACKPOT! You officially remain the main character for another year! ✨"
+
+    };
+
+    document.getElementById('giftResult')
+        .innerHTML = gifts[number];
+
+    celebrate();
+}
+
+
+/* =========================================================
+   FORTUNE
+========================================================= */
+
+function generateFortune() {
+
+    const fortunes = [
+
+        "🔮 I see laughter... lots of it. And probably some questionable decisions. 😂",
+
+        "🔮 This year you're going to collect beautiful memories instead of worrying about things you can't control. 🌷",
+
+        "🔮 Something you've been wishing for may be closer than you think. ✨",
+
+        "🔮 Your future contains cake. This is not negotiable. 🎂",
+
+        "🔮 I predict more adventures, more pictures and approximately 847 more inside jokes. 😂📸",
+
+        "🔮 A beautiful chapter is beginning. Don't rush it. Enjoy it. 🦋",
+
+        "🔮 Your biggest plot twist this year will be realizing just how capable you actually are. 👑",
+
+        "🔮 The universe says: protect your peace, chase your dreams and ignore unnecessary drama. 😂💗"
+
+    ];
+
+    const random =
+        fortunes[
+            Math.floor(Math.random() * fortunes.length)
+        ];
+
+    document.getElementById('fortune')
+        .innerText = random;
+
+    createSparkles();
+}
+
+
+/* =========================================================
+   CAKE CUTTING
+========================================================= */
+
+function cutCake() {
+
+    const cake =
+        document.getElementById('cake');
+
+    const line =
+        document.getElementById('cutLine');
+
+    const message =
+        document.getElementById('cakeMessage');
+
+    cake.classList.add('cake-cut');
+
+    line.style.display = 'block';
+
+    message.innerHTML =
+        "🎉 CAKE CUT! 🎉<br>Now make sure you actually get the biggest slice. 😂🍰";
+
+    celebrate();
+}
+
+
+/* =========================================================
+   BALLOON GAME
+========================================================= */
+
+let balloonCount = 0;
+
+function startBalloons() {
+
+    const area =
+        document.getElementById('balloonArea');
+
+    area.innerHTML = '';
+
+    balloonCount = 0;
+
+    document.getElementById('balloonScore')
+        .innerText = '0';
+
+    document.getElementById('balloonMessage')
+        .innerText =
+        "POP POP POP! 🎈😂";
+
+    for (let i = 0; i < 10; i++) {
+
+        const balloon =
+            document.createElement('div');
+
+        balloon.className = 'balloon';
+
+        balloon.innerText = '🎈';
+
+        balloon.style.left =
+            (5 + Math.random() * 85) + '%';
+
+        balloon.style.top =
+            (5 + Math.random() * 80) + '%';
+
+        balloon.style.animationDelay =
+            (Math.random() * 2) + 's';
+
+        balloon.onclick = function() {
+
+            if (balloon.classList.contains('popped')) {
+                return;
+            }
+
+            balloon.classList.add('popped');
+
+            balloonCount++;
+
+            document.getElementById('balloonScore')
+                .innerText = balloonCount;
+
+            createSparkles();
+
+            if (balloonCount === 10) {
+
+                document.getElementById('balloonMessage')
+                    .innerHTML =
+                    "🎉 YOU DID IT! All balloons popped! You're officially a birthday champion! 👑🎈";
+
+                celebrate();
+            }
+        };
+
+        area.appendChild(balloon);
+    }
+}
+
+
+/* =========================================================
+   QUIZ
+========================================================= */
+
+let quizScore = 0;
+
+function quizAnswer(question) {
+
+    quizScore++;
+
+    const result =
+        document.getElementById('quizResult');
+
+    const messages = [
+
+        "😂 Correct enough! You know yourself well!",
+
+        "💗 Obviously! That was the right energy!",
+
+        "👑 Exactly! Birthday girl knows best!",
+
+        "✨ 100% approved birthday answer!"
+
+    ];
+
+    result.innerText =
+        messages[
+            Math.floor(Math.random() * messages.length)
+        ];
+
+    createSparkles();
+}
+
+
+/* =========================================================
+   SPARKLES
+========================================================= */
+
+function createSparkles() {
+
+    const emojis = [
+        '✨',
+        '💗',
+        '🌸',
+        '⭐',
+        '💖',
+        '🦋'
+    ];
+
+    for (let i = 0; i < 10; i++) {
+
+        const sparkle =
+            document.createElement('div');
+
+        sparkle.className = 'sparkle';
+
+        sparkle.innerText =
+            emojis[
+                Math.floor(Math.random() * emojis.length)
+            ];
+
+        sparkle.style.left =
+            (20 + Math.random() * 60) + 'vw';
+
+        sparkle.style.top =
+            (30 + Math.random() * 40) + 'vh';
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(() => {
+            sparkle.remove();
+        }, 1000);
+    }
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+function celebrate() {
+
+    for (let i = 0; i < 80; i++) {
+
+        const confetti =
+            document.createElement('div');
+
+        confetti.className = 'confetti';
+
+        confetti.style.left =
+            Math.random() * 100 + 'vw';
+
+        confetti.style.animationDuration =
+            (2 + Math.random() * 3) + 's';
+
+        confetti.style.transform =
+            `rotate(${Math.random() * 360}deg)`;
+
+        const shapes = [
+            '🎉',
+            '✨',
+            '💗',
+            '💕',
+            '🌸',
+            '⭐'
+        ];
+
+        confetti.innerText =
+            shapes[
+                Math.floor(Math.random() * shapes.length)
+            ];
+
+        confetti.style.fontSize =
+            (12 + Math.random() * 20) + 'px';
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+            confetti.remove();
+        }, 5000);
+    }
+
+    createSparkles();
+}
+
+
+/* =========================================================
+   BACKGROUND MUSIC
+   Browser-generated gentle melody
+========================================================= */
+
+let audioContext = null;
+let musicPlaying = false;
+let musicTimer = null;
+
+function startMusic() {
+
+    if (musicPlaying) return;
+
+    audioContext =
+        new (
+            window.AudioContext ||
+            window.webkitAudioContext
+        )();
+
+    const notes = [
+        261.63,
+        293.66,
+        329.63,
+        392.00,
+        329.63,
+        293.66,
+        261.63,
+        329.63
+    ];
+
+    let index = 0;
+
+    function playNote() {
+
+        if (!musicPlaying) return;
+
+        const oscillator =
+            audioContext.createOscillator();
+
+        const gain =
+            audioContext.createGain();
+
+        oscillator.type = 'sine';
+
+        oscillator.frequency.value =
+            notes[index];
+
+        gain.gain.setValueAtTime(
+            0.0001,
+            audioContext.currentTime
+        );
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.06,
+            audioContext.currentTime + 0.05
+        );
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.0001,
+            audioContext.currentTime + 0.8
+        );
+
+        oscillator.connect(gain);
+        gain.connect(audioContext.destination);
+
+        oscillator.start();
+
+        oscillator.stop(
+            audioContext.currentTime + 0.85
+        );
+
+        index =
+            (index + 1) % notes.length;
+
+        musicTimer =
+            setTimeout(playNote, 650);
+    }
+
+    musicPlaying = true;
+
+    document.getElementById('musicButton')
+        .innerText = '🔊';
+
+    playNote();
+}
+
+
+function stopMusic() {
+
+    musicPlaying = false;
+
+    if (musicTimer) {
+        clearTimeout(musicTimer);
+        musicTimer = null;
+    }
+
+    document.getElementById('musicButton')
+        .innerText = '🎵';
+}
+
+
+function toggleMusic() {
+
+    if (musicPlaying) {
+        stopMusic();
+    } else {
+        startMusic();
+    }
+}
+
+
+/* =========================================================
+   INITIAL EFFECT
+========================================================= */
+
+setTimeout(() => {
+    createSparkles();
+}, 500);
+
+</script>
+
+</body>
+</html>
